@@ -1,5 +1,5 @@
 
-## Writes a PRMS parameter file from an PRMS Parameter Object.
+## Writes a PRMS parameter file from a PRMS Parameter Object.
 
 # prms_parms : PRMS Parameter Object.
 # path : character string denoting the path to the parameter file.
