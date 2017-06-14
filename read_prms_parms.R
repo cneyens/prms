@@ -1,5 +1,5 @@
 
-## Reads PRMS parameter file and returns PRMS Parameter Object with comments, dimensions and parameters.
+## Reads PRMS parameter file and returns a PRMS Parameter Object with comments, dimensions and parameters.
 
 # path : character string denoting the path to the parameter file.
 
@@ -7,14 +7,14 @@ read_prms_parms = function(path = paste(getwd(), 'input/input.params', sep = '/'
   
   lines = readLines(path)
   
-  # comments
+  ### comments
   comments = lines[1 : (grep("Dimensions", lines)-1)]
   
-  # dimensions
+  ### dimensions
   dimension_lines = lines[grep("Dimensions", lines) : (grep('Parameters', lines) - 1)]
   dimensions = list(name = dimension_lines[(grep("###", dimension_lines)+1)], value = as.numeric(dimension_lines[(grep("###", dimension_lines)+2)]) )
   
-  # parameters
+  ### parameters
   parameter_lines = lines[grep("Parameters", lines) : length(lines)]
   
   parameters = list()
