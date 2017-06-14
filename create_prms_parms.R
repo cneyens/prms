@@ -1,5 +1,5 @@
 
-## Creates an PRMS Parameter Object.
+## Creates a PRMS Parameter Object.
 
 # comments : character vector with comments.
 # dimensions : list of length 2 where the first element is a character vector (name) and the second element is a numeric vector (value).
