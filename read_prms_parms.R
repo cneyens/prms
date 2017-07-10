@@ -29,7 +29,7 @@ read_prms_parms = function(path = paste(getwd(), 'input/input.params', sep = '/'
   parameters$dim = list()
      for (i in 1:length(parameters$name)){
        if(parameters$nr_dim[i] == 1){
-         parameters$dim[[i]] = 'one'
+         parameters$dim[[i]] = as.character(parameter_lines[grep(parameters$name[i], parameter_lines)+2])
        } else {
          parameters$dim[[i]] = vector(mode='character', length = parameters$nr_dim[i])
          
