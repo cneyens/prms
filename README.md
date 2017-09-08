@@ -3,8 +3,8 @@ R functions for facillitating the reading and writing of input and output files 
 
 ## To install
 
-1. install the devtools package: 'install.packages("devtools")'
-2. install prms: 'devtools::install_github("cneyens/prms")'
+1. install the devtools package: `install.packages("devtools")`
+2. install prms: `devtools::install_github("cneyens/prms")`
 
 ## For users
 This package was constructed to use the R environment to perform sensitivity and optimization analyses on PRMS models. The functions are therefore constructed in such a way that building a cost function in R is relatively straightforward. Additionally, functions for reading in output (.csv & Map Results) for postprocessing are incorporated in the code as well. Most likely, I will *not* be updating or adding new features any time soon (if ever). This also means that support will be limited to fixing existing bugs in the code. So feel free to fork this repo for your own use and/or extending the functionalities.
