@@ -1,0 +1,10 @@
+Package: prms
+Version: 0.1.0
+Date: 2017-09-08
+Title: Reading and writing PRMS files
+Description: R functions for facilitating the reading and writing of certain PRMS input and output files.
+Author: Cas Neyens
+Maintainer: Cas Neyens <cas.neyens@vub.be>
+RoxygenNote: 6.0.1
+License: GPL-3
+URL: https://github.com/cneyens/prms
